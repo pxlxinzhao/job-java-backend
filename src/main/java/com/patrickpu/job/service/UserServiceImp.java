@@ -29,4 +29,31 @@ public class UserServiceImp implements UserService {
       return userDao.list();
    }
 
+	@Override
+	@Transactional(readOnly = true)
+	public User getUserById(Long id) {
+		// TODO Auto-generated method stub
+		return userDao.getUserById(id);
+	}
+	
+	@Override
+	@Transactional(readOnly = true)
+	public User getUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return userDao.getUserByUsername(username);
+	}
+	
+	@Override
+	@Transactional(readOnly = true)
+	public User getUserByEmail(String email) {
+		// TODO Auto-generated method stub
+		return userDao.getUserByEmail(email);
+	}
+	
+	@Override
+    @Transactional
+	public void registerUser(String username, String password, String email, String nickname) {
+		// TODO Auto-generated method stub
+	}
+
 }
