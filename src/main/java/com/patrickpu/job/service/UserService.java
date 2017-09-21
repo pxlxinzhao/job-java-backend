@@ -1,8 +1,8 @@
-package com.boraji.tutorial.spring.service;
+package com.patrickpu.job.service;
 
 import java.util.List;
 
-import com.boraji.tutorial.spring.model.User;
+import com.patrickpu.job.model.User;
 
 public interface UserService {
    void save(User user);

@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.config;
+package com.patrickpu.job.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -18,8 +18,8 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.boraji.tutorial.spring.controller",
-      "com.boraji.tutorial.spring.validator" })
+@ComponentScan(basePackages = { "com.patrickpu.job.controller",
+      "com.patrickpu.job.validator" })
 public class WebConfig extends WebMvcConfigurerAdapter {
 
    @Bean

@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.config;
+package com.patrickpu.job.config;
 
 import java.util.Properties;
 
@@ -12,8 +12,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.patrickpu.job.model.User;
+
 import static org.hibernate.cfg.Environment.*;
-import com.boraji.tutorial.spring.model.User;
 
 /**
  * @author imssbora
@@ -21,8 +23,8 @@ import com.boraji.tutorial.spring.model.User;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScans(value = { @ComponentScan("com.boraji.tutorial.spring.dao"),
-      @ComponentScan("com.boraji.tutorial.spring.service") })
+@ComponentScans(value = { @ComponentScan("com.patrickpu.job.dao"),
+      @ComponentScan("com.patrickpu.job.service") })
 public class AppConfig {
 
    @Autowired

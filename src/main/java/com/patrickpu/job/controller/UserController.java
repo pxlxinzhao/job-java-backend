@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.controller;
+package com.patrickpu.job.controller;
 
 import java.util.Locale;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.boraji.tutorial.spring.model.User;
-import com.boraji.tutorial.spring.service.UserService;
+import com.patrickpu.job.model.User;
+import com.patrickpu.job.service.UserService;
 
 /**
  * @author imssbora

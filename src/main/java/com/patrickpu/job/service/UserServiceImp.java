@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.service;
+package com.patrickpu.job.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.boraji.tutorial.spring.dao.UserDao;
-import com.boraji.tutorial.spring.model.User;
+import com.patrickpu.job.dao.UserDao;
+import com.patrickpu.job.model.User;
 
 /**
  * @author imssbora

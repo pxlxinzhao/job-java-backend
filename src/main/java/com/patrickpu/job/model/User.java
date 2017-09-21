@@ -1,4 +1,4 @@
-package com.boraji.tutorial.spring.model;
+package com.patrickpu.job.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
