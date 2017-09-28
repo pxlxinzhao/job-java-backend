@@ -26,7 +26,7 @@ public class Post {
 	@Column(name="category")
 	private String category;
 	@Column(name="salary")
-	private int salary;
+	private String salary;
 	@Column(name="email")
 	private String email;
 	@Column(name="phone")
@@ -43,8 +43,8 @@ public class Post {
 	private String country;
 	@Column(name="isagent")
 	private Boolean isagent;
-	@Column(name="requirment")
-	private String requirment;
+	@Column(name="requirement")
+	private String requirement;
 	public Long getId() {
 		return id;
 	}
@@ -81,10 +81,10 @@ public class Post {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public int getSalary() {
+	public String getSalary() {
 		return salary;
 	}
-	public void setSalary(int salary) {
+	public void setSalary(String salary) {
 		this.salary = salary;
 	}
 	public String getEmail() {
@@ -136,17 +136,17 @@ public class Post {
 		this.isagent = isagent;
 	}
 	public String getRequirment() {
-		return requirment;
+		return requirement;
 	}
 	public void setRequirment(String requirment) {
-		this.requirment = requirment;
+		this.requirement = requirment;
 	}
 	@Override
 	public String toString() {
 		return "Post [id=" + id + ", postby=" + postby + ", timestamp=" + timestamp + ", title=" + title + ", details="
 				+ details + ", category=" + category + ", salary=" + salary + ", email=" + email + ", phone=" + phone
 				+ ", phone2=" + phone2 + ", address=" + address + ", city=" + city + ", state=" + state + ", country="
-				+ country + ", isagent=" + isagent + ", requirment=" + requirment + "]";
+				+ country + ", isagent=" + isagent + ", requirement=" + requirement + "]";
 	}
 	
 }
