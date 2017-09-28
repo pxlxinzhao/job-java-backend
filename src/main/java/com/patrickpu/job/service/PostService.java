@@ -6,4 +6,6 @@ import com.patrickpu.job.model.Post;
 
 public interface PostService {
 	List<Post> list();
+
+	void save(Post post);
 }

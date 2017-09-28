@@ -4,11 +4,14 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.patrickpu.job.model.Post;
+import com.patrickpu.job.model.User;
 import com.patrickpu.job.service.PostService;
 
 @RestController
@@ -22,5 +25,11 @@ public class PostRestController {
 	   public List<Post> listAllPost() {
 		  List<Post> posts = postService.list();
 	      return posts;
+	   }
+	   
+	   @RequestMapping(method = RequestMethod.POST, value = "/new")
+	   public @ResponseBody Post getByEmail( @RequestBody Post post) {
+		  postService.save(post);
+	      return post;
 	   }
 }	

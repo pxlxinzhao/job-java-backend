@@ -19,8 +19,13 @@ public class PostDaoImpl implements PostDao{
 	   
 	@Override
 	public List<Post> list() {
-		TypedQuery<Post> query = sessionFactory.getCurrentSession().createQuery("from Post");
+		TypedQuery<Post> query = sessionFactory.getCurrentSession().createQuery("from Post order by timestamp desc");
 	      return query.getResultList();
+	}
+
+	@Override
+	public void save(Post post) {
+		sessionFactory.getCurrentSession().save(post);
 	}
 
 }
